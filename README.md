@@ -16,26 +16,30 @@ Data collection and model retraining support for custom gestures.
 
 Lightweight Python implementation with OpenCV for webcam capture.
 
-Project Structure
-│  app.py                     # Main inference program
-│  keypoint_classification.ipynb      # Notebook for hand sign model training
-│  point_history_classification.ipynb # Notebook for finger gesture model training
+Directory
+<pre>
+│  app.py
+│  keypoint_classification.ipynb
+│  point_history_classification.ipynb
 │  
 ├─model
 │  ├─keypoint_classifier
-│  │     keypoint.csv                  # Training data
-│  │     keypoint_classifier.tflite    # Trained hand sign model
-│  │     keypoint_classifier.py        # Inference code
-│  │     keypoint_classifier_label.csv # Label mapping
+│  │  │  keypoint.csv
+│  │  │  keypoint_classifier.hdf5
+│  │  │  keypoint_classifier.py
+│  │  │  keypoint_classifier.tflite
+│  │  └─ keypoint_classifier_label.csv
 │  │          
 │  └─point_history_classifier
-│        point_history.csv                  # Training data
-│        point_history_classifier.tflite    # Trained finger gesture model
-│        point_history_classifier.py        # Inference code
-│        point_history_classifier_label.csv # Label mapping
+│      │  point_history.csv
+│      │  point_history_classifier.hdf5
+│      │  point_history_classifier.py
+│      │  point_history_classifier.tflite
+│      └─ point_history_classifier_label.csv
 │          
 └─utils
-       cvfpscalc.py       # Module for FPS calculation
+    └─cvfpscalc.py
+</pre>
 
 Requirements
 
